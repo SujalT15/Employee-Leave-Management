@@ -3,7 +3,7 @@ import { User, LeaveRequest, LeaveBalance } from '../types/types';
 export const mockUsers: User[] = [
   {
     id: '1',
-    name: 'Admin User',
+    name: 'Ravi Verma',
     email: 'admin@company.com',
     password: 'admin123',
     role: 'Admin',
@@ -13,8 +13,8 @@ export const mockUsers: User[] = [
   },
   {
     id: '2',
-    name: 'John Manager',
-    email: 'john.manager@company.com',
+    name: 'Amit Sharma',
+    email: 'amit.sharma@company.com',
     password: 'manager123',
     role: 'Manager',
     department: 'Engineering',
@@ -23,8 +23,8 @@ export const mockUsers: User[] = [
   },
   {
     id: '3',
-    name: 'Sarah Employee',
-    email: 'sarah.employee@company.com',
+    name: 'Priya Mehta',
+    email: 'priya.mehta@company.com',
     password: 'employee123',
     role: 'Employee',
     managerId: '2',
@@ -34,8 +34,8 @@ export const mockUsers: User[] = [
   },
   {
     id: '4',
-    name: 'Mike Developer',
-    email: 'mike.dev@company.com',
+    name: 'Rahul Singh',
+    email: 'rahul.singh@company.com',
     password: 'employee123',
     role: 'Employee',
     managerId: '2',
@@ -45,8 +45,8 @@ export const mockUsers: User[] = [
   },
   {
     id: '5',
-    name: 'Emma Wilson',
-    email: 'emma.wilson@company.com',
+    name: 'Sneha Iyer',
+    email: 'sneha.iyer@company.com',
     password: 'employee123',
     role: 'Employee',
     managerId: '2',
@@ -60,7 +60,7 @@ export const mockLeaveRequests: LeaveRequest[] = [
   {
     id: '1',
     employeeId: '3',
-    employeeName: 'Sarah Employee',
+    employeeName: 'Priya Mehta',
     leaveType: 'Annual',
     startDate: '2024-08-15',
     endDate: '2024-08-20',
@@ -72,7 +72,7 @@ export const mockLeaveRequests: LeaveRequest[] = [
   {
     id: '2',
     employeeId: '4',
-    employeeName: 'Mike Developer',
+    employeeName: 'Rahul Singh',
     leaveType: 'Sick',
     startDate: '2024-07-10',
     endDate: '2024-07-12',
@@ -87,7 +87,7 @@ export const mockLeaveRequests: LeaveRequest[] = [
   {
     id: '3',
     employeeId: '5',
-    employeeName: 'Emma Wilson',
+    employeeName: 'Sneha Iyer',
     leaveType: 'Casual',
     startDate: '2024-07-20',
     endDate: '2024-07-20',
@@ -102,7 +102,7 @@ export const mockLeaveRequests: LeaveRequest[] = [
   {
     id: '4',
     employeeId: '3',
-    employeeName: 'Sarah Employee',
+    employeeName: 'Priya Mehta',
     leaveType: 'Casual',
     startDate: '2024-06-15',
     endDate: '2024-06-16',
@@ -117,7 +117,7 @@ export const mockLeaveRequests: LeaveRequest[] = [
   {
     id: '5',
     employeeId: '4',
-    employeeName: 'Mike Developer',
+    employeeName: 'Rahul Singh',
     leaveType: 'Annual',
     startDate: '2024-09-01',
     endDate: '2024-09-10',
