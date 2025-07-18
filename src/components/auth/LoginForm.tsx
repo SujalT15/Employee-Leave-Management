@@ -3,9 +3,16 @@ import { useAuth } from '../../contexts/AuthContext';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Label } from '../ui/label';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle
+} from '../ui/card';
 import { Calendar, Lock, Mail, AlertCircle } from 'lucide-react';
 import { Alert, AlertDescription } from '../ui/alert';
+import { Link } from 'react-router-dom';
 
 const LoginForm: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -33,8 +40,8 @@ const LoginForm: React.FC = () => {
 
   const demoAccounts = [
     { role: 'Admin', email: 'admin@company.com', password: 'admin123' },
-    { role: 'Manager', email: 'john.manager@company.com', password: 'manager123' },
-    { role: 'Employee', email: 'sarah.employee@company.com', password: 'employee123' }
+    { role: 'Manager', email: 'amit.sharma@company.com', password: 'manager123' },
+    { role: 'Employee', email: 'priya.mehta@company.com', password: 'employee123' }
   ];
 
   const handleDemoLogin = (demoEmail: string, demoPassword: string) => {
@@ -110,6 +117,14 @@ const LoginForm: React.FC = () => {
               >
                 {isLoading ? 'Signing in...' : 'Sign In'}
               </Button>
+
+              {/* 👇 Sign Up Link */}
+              <p className="text-sm text-center text-muted-foreground mt-4">
+                Don&apos;t have an account?{' '}
+                <Link to="/signup" className="text-primary hover:underline">
+                  Sign Up
+                </Link>
+              </p>
             </form>
           </CardContent>
         </Card>
